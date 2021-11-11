@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#FEF4E8"
     tools:context=".Login">
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/searchme_logo"
-        android:layout_marginVertical="20dp" />
+        android:layout_marginVertical="10dp" />
     <EditText
         android:id="@+id/InputId"
         android:layout_width="match_parent"
@@ -30,20 +30,46 @@
         android:background="@drawable/border"
         android:textSize="20sp"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="15dp"
         android:padding="10dp"
         android:inputType="textPassword"
         android:hint="PW"/>
-    <Button
-        android:id="@+id/SignIn"
+    <EditText
+        android:id="@+id/InputPwConfirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign in"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="15dp"
-        android:backgroundTint="#970747"
+        android:background="@drawable/border"
         android:textSize="20sp"
-        android:textAllCaps="false"/>
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:hint="PW Confirm"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <Button
+                    android:id="@+id/PreferenceButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="후식"
+                    />
+                <Button
+                    android:id="@+id/PreferenceButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="후식"
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
     <Button
         android:id="@+id/SignUp"
         android:layout_width="match_parent"
