@@ -1,5 +1,6 @@
 package kr.ac.kumoh.s20160145.serchme
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kr.ac.kumoh.s20160145.serchme.databinding.ActivityMainBinding
@@ -11,5 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         //setContentView(R.layout.activity_main)
+            Intent(this, Login::class.java).run{
+            startActivity(this)
+        }
     }
 }
