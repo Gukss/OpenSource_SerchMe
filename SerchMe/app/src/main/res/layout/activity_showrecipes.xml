@@ -54,25 +54,25 @@
             android:layout_height="wrap_content">
             <TableRow>
                 <Button
-                    android:id="@+id/"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dp"
                     android:text="" />
                 <Button
-                    android:id="@+id/"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dp"
                     android:text="" />
                 <Button
-                    android:id="@+id/"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dp"
                     android:text="" />
                 <Button
-                    android:id="@+id/"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dp"
@@ -81,6 +81,14 @@
 
         </TableLayout>
     </LinearLayout>
+    <Button
+        android:id="@+id/reselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:backgroundTint="#888"
+        android:text="재료 다시 선택"/>
 
 
 </LinearLayout>
