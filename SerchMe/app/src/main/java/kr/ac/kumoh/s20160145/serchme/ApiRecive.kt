@@ -20,9 +20,9 @@ class ApiRecive : AppCompatActivity() {
         setContentView(view.root)
         //setContentView(R.layout.activity_api_recive)
 
-        view.button.setOnClickListener {
+        /*view.button.setOnClickListener {
             data=getData()
-        }
+        }*/
     }
 
     fun getData() {

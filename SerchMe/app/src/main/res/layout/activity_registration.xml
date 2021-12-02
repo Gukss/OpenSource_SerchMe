@@ -51,13 +51,21 @@
         android:hint="PW Confirm"
         android:singleLine="true"
         android:maxLength="20"/>
-    <ScrollView
+    <!--<ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TableLayout
+        android:layout_height="wrap_content">-->
+        <!--<TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TableRow>
+            android:layout_height="wrap_content">-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:choiceMode="multipleChoice"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal" />
+
+            <!--<TableRow>
                 <Button
                     android:id="@+id/PreferenceButton1"
                     android:layout_width="match_parent"
@@ -74,8 +82,8 @@
                     />
             </TableRow>
 
-        </TableLayout>
-    </ScrollView>
+        </TableLayout>-->
+    <!--</ScrollView>-->
     <Button
         android:id="@+id/SignUp"
         android:layout_width="match_parent"
