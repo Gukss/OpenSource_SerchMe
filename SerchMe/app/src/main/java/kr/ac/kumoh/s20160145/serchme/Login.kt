@@ -32,7 +32,7 @@ class Login : AppCompatActivity() {
         btnRegister = findViewById(R.id.SignUp)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://10.0.2.2") // 주소는 본인의 서버 주소로 설정
+            .baseUrl("http://searchme1.cafe24.com") // 주소는 본인의 서버 주소로 설정
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

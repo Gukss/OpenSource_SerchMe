@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         //setContentView(R.layout.activity_main)
-            Intent(this, Login::class.java).run{
+            Intent(this, registration::class.java).run{
             startActivity(this)
         }
     }
